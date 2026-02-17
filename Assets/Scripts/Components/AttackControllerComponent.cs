@@ -8,7 +8,7 @@ public class AttackControllerComponent : MonoBehaviour
     readonly Subject<Unit>  attackStartSubject = new Subject<Unit>();
     readonly Subject<Unit> attackEndSubject = new Subject<Unit>();
     public Observable<Unit> OnAttackStart => attackStartSubject;
-    public Observable<Uint> OnAttackEnd => attackEndSUbject;
+    public Observable<Unit> OnAttackEnd => attackEndSubject;
     
 
     bool isAttacking = false;

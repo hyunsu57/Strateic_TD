@@ -461,10 +461,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1387805933}
-        m_TargetAssemblyTypeName: HealthBarUIComponent, Assembly-CSharp
-        m_MethodName: UpdateHealth
-        m_Mode: 3
+      - m_Target: {fileID: 839621085}
+        m_TargetAssemblyTypeName: AttackControllerComponent, Assembly-CSharp
+        m_MethodName: EndAttack
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -594,10 +594,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 839621083}
-        m_TargetAssemblyTypeName: HealthComponent, Assembly-CSharp
-        m_MethodName: TakeDamage
-        m_Mode: 3
+      - m_Target: {fileID: 839621085}
+        m_TargetAssemblyTypeName: AttackControllerComponent, Assembly-CSharp
+        m_MethodName: StartAttack
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3482,6 +3482,7 @@ GameObject:
   - component: {fileID: 839621082}
   - component: {fileID: 839621083}
   - component: {fileID: 839621084}
+  - component: {fileID: 839621085}
   m_Layer: 0
   m_Name: Farmer0
   m_TagString: Untagged
@@ -3546,6 +3547,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d0a6080d069f444d831bb8ba945db9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HealthManualDestroyLinker
+--- !u!114 &839621085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839621080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66796c84e1c99e74a9970131ae70b8b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AttackControllerComponent
 --- !u!1 &1224013465
 GameObject:
   m_ObjectHideFlags: 0
