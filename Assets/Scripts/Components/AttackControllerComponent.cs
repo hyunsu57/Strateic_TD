@@ -4,7 +4,8 @@ using R3;
 
 public class AttackControllerComponent : MonoBehaviour
 {
-
+    // 공격대상이 공격범위에 들어오면 알림을 보내고, 공격대상이 공격범위에서 나가면 알림을 보내는 컴포넌트
+    // 원거리 캐릭터는 범위에 적이 있으면 가장 가까운적, 근접 캐릭터는 가장 가까운 적에게 공격 하도록 이렇게 했다
     readonly Subject<Unit>  attackStartSubject = new Subject<Unit>();
     readonly Subject<Unit> attackEndSubject = new Subject<Unit>();
     public Observable<Unit> OnAttackStart => attackStartSubject;
