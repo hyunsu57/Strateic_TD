@@ -6,7 +6,7 @@ public class RangeDetectorComponent : MonoBehaviour
 
     readonly Subject<IDamageable> targetEnteredSubject = new Subject<IDamageable>();
     readonly Subject<IDamageable> targetExitedSubject = new Subject<IDamageable>();
-    public Subject<IDamageable> OnTargetEnterd => targetEnteredSubject;
+    public Subject<IDamageable> OnTargetEntered => targetEnteredSubject;
     public Subject<IDamageable> OnTargetExited => targetExitedSubject;
     
     [SerializeField] string targetTag = "Enemy";

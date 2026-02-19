@@ -3695,7 +3695,7 @@ Transform:
   m_GameObject: {fileID: 839621080}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.01, y: 0.14, z: 0}
+  m_LocalPosition: {x: -2.52, y: 0.14, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4370,8 +4370,6 @@ GameObject:
   - component: {fileID: 1431564810}
   - component: {fileID: 1431564809}
   - component: {fileID: 1431564811}
-  - component: {fileID: 1431564813}
-  - component: {fileID: 1431564812}
   m_Layer: 0
   m_Name: Farmer0_AttackRange
   m_TagString: Untagged
@@ -4470,30 +4468,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RangeDetectorComponent
   targetTag: Enemy
---- !u!114 &1431564812
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1431564807}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4d723d371f23f64f92289f0d03269df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RangeDetectorTargetTrackerLinker
---- !u!114 &1431564813
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1431564807}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac64a2b8da2fd4a4f9cfaae8b3d659f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TargetTrackerComponent
 --- !u!1 &1490399282
 GameObject:
   m_ObjectHideFlags: 0
