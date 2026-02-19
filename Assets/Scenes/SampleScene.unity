@@ -3679,6 +3679,7 @@ GameObject:
   - component: {fileID: 839621083}
   - component: {fileID: 839621084}
   - component: {fileID: 839621085}
+  - component: {fileID: 839621086}
   m_Layer: 0
   m_Name: Farmer0
   m_TagString: Untagged
@@ -3755,6 +3756,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66796c84e1c99e74a9970131ae70b8b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AttackControllerComponent
+--- !u!114 &839621086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839621080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a06242f1c3b19d6489628176caaf69aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetTrackerAttackControllerLinker
+  targetTracker: {fileID: 1431564813}
 --- !u!1 &1224013465
 GameObject:
   m_ObjectHideFlags: 0
