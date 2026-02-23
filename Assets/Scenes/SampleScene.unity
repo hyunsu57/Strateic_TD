@@ -461,9 +461,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 839621085}
-        m_TargetAssemblyTypeName: AttackControllerComponent, Assembly-CSharp
-        m_MethodName: EndAttack
+      - m_Target: {fileID: 839621088}
+        m_TargetAssemblyTypeName: IntervalTimerComponent, Assembly-CSharp
+        m_MethodName: StopTimer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -594,9 +594,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 839621087}
-        m_TargetAssemblyTypeName: ObjectSpawnerComponent, Assembly-CSharp
-        m_MethodName: Spawn
+      - m_Target: {fileID: 839621088}
+        m_TargetAssemblyTypeName: IntervalTimerComponent, Assembly-CSharp
+        m_MethodName: StartTimer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
