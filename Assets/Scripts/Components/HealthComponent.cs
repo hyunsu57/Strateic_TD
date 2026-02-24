@@ -14,6 +14,7 @@ public class HealthComponent : MonoBehaviour, IDamageable
 
     readonly public Subject<Unit> deathSubject = new Subject<Unit>();    //알림을 보내는 클래스 , 유니티 이벤트를 보낼때 사용
     public Observable<Unit> OnDeath => deathSubject; //구독자가 구독할 수 있는 observable 속성
+    public GameObject RelatedGameObject => gameObject; // IDamageable 인터페이스 구현, 자신의 게임 오브젝트 반환
     void Awake()
     {
         deathSubject.AddTo(this); // HealthComponent 가 파괴될때 구독도 자동으로 해제됨, 메모리 누수 방지

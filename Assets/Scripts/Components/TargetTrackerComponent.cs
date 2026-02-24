@@ -2,6 +2,8 @@ using UnityEngine;
 using R3;
 using System.Collections.Generic;
 
+//공격범위내의 대상 담당 클래스
+// 가까운 대상을 찾는 함수를 추가
 public class TargetTrackerComponent : MonoBehaviour
 {
     List<IDamageable> targets = new List<IDamageable>();    // 현재 추적 중인 타겟 리스트
@@ -35,5 +37,38 @@ public class TargetTrackerComponent : MonoBehaviour
         return new List<IDamageable>(targets); // 살아있는 타겟 리스트 반환
     }
     
+
+    // 가까운 공격대상을 찾기
+    public IDamageable GetNearestTarget(Vector3 currentPosition) {
+        // 외부에서 currentPosition 로 위치가 전달된다.
+        IDamageable nearestTarget = null;
+        float nearestDistance = Mathf.Infinity; 
+
+        foreach(var target in targets) {
+            if(target != null && target.IsAlive) {
+                // 타겟과의 거리 계산, target.RelatedGameObject 는 IDamageable 인터페이스에서 구현된 속성으로, 타겟의 게임 오브젝트를 반환한다.
+                float distance = Vector3.Distance(currentPosition, target.RelatedGameObject.transform.position); 
+                if(distance < nearestDistance) {
+                    nearestDistance = distance;
+                    nearestTarget =  target;
+
+                }
+            }
+        }
+
+        return nearestTarget;
+    }
+
+    // 디버그용, 가장가까운 대상의 정보를 노출
+    public void LogNearestTarget() {
+        Vector3 currentPosition = transform.position;   // 현재 위치
+        IDamageable nearestTarget = GetNearestTarget(currentPosition); // 가장 가까운 타켓
+        if (nearestTarget != null) {
+            Debug.Log($"가장 가까운 타겟: {nearestTarget}");
+        } else {
+            Debug.Log("타겟이 없습니다.");
+        }
+    }
+
 
 }

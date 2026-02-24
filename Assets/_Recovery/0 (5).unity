@@ -594,9 +594,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1431564813}
-        m_TargetAssemblyTypeName: TargetTrackerComponent, Assembly-CSharp
-        m_MethodName: LogNearestTarget
+      - m_Target: {fileID: 839621088}
+        m_TargetAssemblyTypeName: IntervalTimerComponent, Assembly-CSharp
+        m_MethodName: StartTimer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3700,7 +3700,7 @@ Transform:
   m_GameObject: {fileID: 839621080}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.01, y: 0.14, z: 0}
+  m_LocalPosition: {x: 1.87, y: 2.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4741,6 +4741,8 @@ CanvasRenderer:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 519420032}
+  - {fileID: 619394802}
   - {fileID: 839621081}
   - {fileID: 734163609}
   - {fileID: 82746350}
@@ -4748,5 +4750,3 @@ SceneRoots:
   - {fileID: 709332379}
   - {fileID: 1343763253}
   - {fileID: 458685498}
-  - {fileID: 519420032}
-  - {fileID: 619394802}
