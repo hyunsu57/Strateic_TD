@@ -760,6 +760,8 @@ GameObject:
   - component: {fileID: 458685495}
   - component: {fileID: 458685499}
   - component: {fileID: 458685500}
+  - component: {fileID: 458685502}
+  - component: {fileID: 458685501}
   m_Layer: 0
   m_Name: Enemy2
   m_TagString: Enemy
@@ -942,6 +944,30 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth:
     value: 100
+--- !u!114 &458685501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 458685494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d0a6080d069f444d831bb8ba945db9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HealthManualDestroyLinker
+--- !u!114 &458685502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 458685494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faae0cb2ebbb324478e1dd61286cf1cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ManualDestroyComponent
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
